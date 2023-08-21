@@ -13,6 +13,7 @@ locals {
   default = {
     container_app_environment = {
       name                           = ""
+      log_analytics_workspace_id     = null
       infrastructure_subnet_id       = null
       internal_load_balancer_enabled = null
       tags                           = {}
