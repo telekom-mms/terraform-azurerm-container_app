@@ -16,6 +16,7 @@ locals {
       log_analytics_workspace_id     = null
       infrastructure_subnet_id       = null
       internal_load_balancer_enabled = null
+      zone_redundancy_enabled        = null
       tags                           = {}
     }
     container_app_environment_storage = {

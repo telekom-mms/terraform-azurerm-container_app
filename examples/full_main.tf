@@ -50,6 +50,7 @@ module "container_app" {
       resource_group_name        = "rg-mms-github"
       infrastructure_subnet_id   = module.network.subnet["snet-app-mms"].id
       log_analytics_workspace_id = module.log_analytics.log_analytics_workspace["logmms"].id
+      zone_redundancy_enabled    = true
       tags = {
         project     = "mms-github"
         environment = terraform.workspace
