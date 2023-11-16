@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.0.2](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.2) (2023-11-16)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1.0.1...1.0.2)
+
+**Implemented enhancements:**
+
+- \[Enhancement\] Add zone\_redundancy\_enabled support [\#5](https://github.com/telekom-mms/terraform-azurerm-container-app/issues/5)
+
+## [1.0.1](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.1) (2023-11-16)
+
+[Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1.0.0...1.0.1)
+
+**Implemented enhancements:**
+
+- add more current available attributes for container\_app environment [\#7](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/7) ([michaelamattes](https://github.com/michaelamattes))
+
+**Merged pull requests:**
+
+- update release workflow [\#9](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/9) ([michaelamattes](https://github.com/michaelamattes))
+- update topics [\#8](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/8) ([michaelamattes](https://github.com/michaelamattes))
+- add zone\_redundancy\_enabled [\#6](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/6) ([matthiss](https://github.com/matthiss))
+- run terrascan in test setting directory [\#4](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/4) ([michaelamattes](https://github.com/michaelamattes))
+- make log\_analytics\_workspace\_id optional [\#3](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/3) ([matthiss](https://github.com/matthiss))
+
 ## [1.0.0](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.0) (2023-07-19)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1bbb4204a61a2c25720b3aecfc4d82b435f2b4f5...1.0.0)
