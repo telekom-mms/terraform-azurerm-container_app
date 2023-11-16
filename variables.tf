@@ -11,26 +11,24 @@ variable "container_app_environment_storage" {
 
 locals {
   default = {
+    // resource definition
     container_app_environment = {
-      name                           = ""
-      log_analytics_workspace_id     = null
-      infrastructure_subnet_id       = null
-      internal_load_balancer_enabled = null
-      zone_redundancy_enabled        = null
-      tags                           = {}
+      name                                        = ""
+      dapr_application_insights_connection_string = null
+      infrastructure_subnet_id                    = null
+      internal_load_balancer_enabled              = null
+      zone_redundancy_enabled                     = null
+      log_analytics_workspace_id                  = null
+      tags                                        = {}
     }
     container_app_environment_storage = {
       name        = ""
-      access_mode = "ReadOnly"
+      access_mode = "ReadOnly" // defined default
     }
   }
 
-  /**
-    compare and merge custom and default values
-  */
-  /**
-    deep merge of all custom and default values
-  */
+  // compare and merge custom and default values
+  // deep merge of all custom and default values
   container_app_environment = {
     for container_app_environment in keys(var.container_app_environment) :
     container_app_environment => merge(local.default.container_app_environment, var.container_app_environment[container_app_environment])

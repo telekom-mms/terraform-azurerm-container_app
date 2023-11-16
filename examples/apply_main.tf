@@ -1,13 +1,3 @@
-module "log_analytics" {
-  source = "registry.terraform.io/telekom-mms/log-analytics/azurerm"
-  log_analytics_workspace = {
-    logmms = {
-      location            = "westeurope"
-      resource_group_name = "rg-mms-github"
-    }
-  }
-}
-
 module "storage" {
   source = "registry.terraform.io/telekom-mms/storage/azurerm"
   storage_account = {
@@ -28,9 +18,8 @@ module "container_app" {
   source = "registry.terraform.io/telekom-mms/terraform-azurerm-container-app/azurerm"
   container_app_environment = {
     app = {
-      location                   = "westeurope"
-      resource_group_name        = "rg-mms-github"
-      log_analytics_workspace_id = module.log_analytics.log_analytics_workspace["logmms"].id
+      location            = "westeurope"
+      resource_group_name = "rg-mms-github"
     }
   }
   container_app_environment_storage = {
