@@ -18,8 +18,8 @@ module "container_app" {
   source = "registry.terraform.io/telekom-mms/terraform-azurerm-container-app/azurerm"
   container_app_environment = {
     app = {
-      location                   = "westeurope"
-      resource_group_name        = "rg-mms-github"
+      location            = "westeurope"
+      resource_group_name = "rg-mms-github"
     }
   }
   container_app_environment_storage = {
