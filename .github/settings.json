@@ -6,8 +6,8 @@
     "topics": [
       "terraform",
       "azure",
-      "container_app_environment",
-      "container_app_environment_storage"
+      "azurerm-container-app-environment",
+      "azurerm-container-app-environment-storage"
     ]
   }
 }
