@@ -9,14 +9,15 @@
 resource "azurerm_container_app_environment" "container_app_environment" {
   for_each = var.container_app_environment
 
-  name                           = local.container_app_environment[each.key].name == "" ? each.key : local.container_app_environment[each.key].name
-  resource_group_name            = local.container_app_environment[each.key].resource_group_name
-  location                       = local.container_app_environment[each.key].location
-  log_analytics_workspace_id     = local.container_app_environment[each.key].log_analytics_workspace_id
-  infrastructure_subnet_id       = local.container_app_environment[each.key].infrastructure_subnet_id
-  internal_load_balancer_enabled = local.container_app_environment[each.key].internal_load_balancer_enabled
-  tags                           = local.container_app_environment[each.key].tags
-  zone_redundancy_enabled        = local.container_app_environment[each.key].zone_redundancy_enabled
+  name                                        = local.container_app_environment[each.key].name == "" ? each.key : local.container_app_environment[each.key].name
+  resource_group_name                         = local.container_app_environment[each.key].resource_group_name
+  location                                    = local.container_app_environment[each.key].location
+  dapr_application_insights_connection_string = local.container_app_environment[each.key].dapr_application_insights_connection_string
+  infrastructure_subnet_id                    = local.container_app_environment[each.key].infrastructure_subnet_id
+  internal_load_balancer_enabled              = local.container_app_environment[each.key].internal_load_balancer_enabled
+  zone_redundancy_enabled                     = local.container_app_environment[each.key].zone_redundancy_enabled
+  log_analytics_workspace_id                  = local.container_app_environment[each.key].log_analytics_workspace_id
+  tags                                        = local.container_app_environment[each.key].tags
 }
 
 resource "azurerm_container_app_environment_storage" "container_app_environment_storage" {
