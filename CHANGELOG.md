@@ -1,12 +1,17 @@
 # Changelog
 
-## [1.0.2](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.2) (2023-11-20)
+## [1.0.2](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.2) (2024-08-28)
 
 [Full Changelog](https://github.com/telekom-mms/terraform-azurerm-container-app/compare/1.0.1...1.0.2)
 
 **Implemented enhancements:**
 
 - \[Enhancement\] Add zone\_redundancy\_enabled support [\#5](https://github.com/telekom-mms/terraform-azurerm-container-app/issues/5)
+
+**Merged pull requests:**
+
+- Pin version of azurerm to compatible state   [\#14](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/14) ([michaelamattes](https://github.com/michaelamattes))
+- update settings [\#10](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/10) ([michaelamattes](https://github.com/michaelamattes))
 
 ## [1.0.1](https://github.com/telekom-mms/terraform-azurerm-container-app/tree/1.0.1) (2023-11-16)
 
