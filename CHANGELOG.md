@@ -10,6 +10,7 @@
 
 **Merged pull requests:**
 
+- Repair release workflow [\#16](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/16) ([michaelamattes](https://github.com/michaelamattes))
 - Pin version of azurerm to compatible state   [\#14](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/14) ([michaelamattes](https://github.com/michaelamattes))
 - update settings [\#10](https://github.com/telekom-mms/terraform-azurerm-container-app/pull/10) ([michaelamattes](https://github.com/michaelamattes))
 
